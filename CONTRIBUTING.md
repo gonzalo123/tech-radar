@@ -12,18 +12,26 @@ This document defines the editorial, research, writing, and publishing process.
 
 # 1. Editorial mission
 
+Tech Radar is primarily an AI bulletin. The main objective is to help the reader stay current on the models, products, tools and practices that are changing how software is built and operated.
+
 Tech Radar prioritizes developments related to:
 
 * Artificial intelligence
+* New foundation and reasoning models from OpenAI, Anthropic, xAI/Grok, Google, Meta, Mistral and important Chinese AI labs and vendors
+* Model releases, availability, context windows, multimodality, tool use, fine-tuning, pricing and materially relevant evaluations
 * AI agents
 * Claude Code
 * Codex
 * GitHub Copilot
+* OpenCode
 * Amazon Bedrock
 * AWS
 * Strands Agents
 * MCP
 * Agent skills
+* New tools, CLIs, SDKs, plugins and developer products for working with AI
+* New skills, skill marketplaces and reusable agent capabilities
+* Methodologies for prompting, planning, evaluation, context engineering, coding agents and human-in-the-loop workflows
 * Planning and execution workflows
 * Python
 * Python backends
@@ -35,6 +43,8 @@ Tech Radar prioritizes developments related to:
 * LLM cost control
 * Enterprise AI and AWS environments
 * Developer tooling
+
+Coverage is ordered by importance. AI and model news comes first; tools, skills and methodologies come next; AWS and production infrastructure follow; general development news is included when it has clear practical value, with special attention to Python and Python backends.
 
 The publication is deliberately curated.
 
@@ -51,15 +61,19 @@ Prefer developments with clear practical consequences.
 Examples:
 
 * a significant new product capability;
+* a meaningful model release or capability change from OpenAI, Anthropic, xAI/Grok or another major provider;
+* a relevant release from Chinese model providers or open-model projects;
 * an important API or platform change;
 * a new model or tool that changes existing development workflows;
+* a new AI tool, skill, CLI, SDK or methodology that a developer can apply;
 * meaningful changes in pricing or limits;
 * important security issues;
 * new capabilities for production agents;
 * significant changes in Claude Code, Codex or Copilot workflows;
 * new AWS or Bedrock functionality;
 * meaningful developments around MCP, skills or agent orchestration;
-* major Python, React, Docker or infrastructure changes;
+* major Python or Python ecosystem changes, especially those affecting backends, packaging, runtimes, APIs or AI applications;
+* important React, Docker or infrastructure changes;
 * changes affecting observability, security, performance or cost;
 * developments that enable a useful new proof of concept.
 
