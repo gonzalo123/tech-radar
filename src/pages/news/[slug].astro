@@ -1,0 +1,4 @@
+---
+import { getCollection, render } from 'astro:content'; import NewsLayout from '../../layouts/NewsLayout.astro'; import { slug } from '../../lib/news'; export async function getStaticPaths(){return (await getCollection('news',({data})=>!data.draft)).map(entry=>({params:{slug:slug(entry)},props:{entry}}));} const {entry}=Astro.props; const {Content}=await render(entry);
+---
+<NewsLayout entry={entry}><Content /></NewsLayout>

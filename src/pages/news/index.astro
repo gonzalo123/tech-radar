@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'; import NewsCard from '../../components/NewsCard.astro'; import {published} from '../../lib/news'; const items=await published();
+---
+<BaseLayout><main><div class="wrap"><div class="eyebrow">Archivo</div><h1>Noticias</h1><div class="grid">{items.map(entry=><NewsCard entry={entry}/>)}</div></div></main></BaseLayout>

@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'; import NewsCard from '../../components/NewsCard.astro'; import {published,tags} from '../../lib/news'; const items=await published(); export async function getStaticPaths(){const all=await published(); return tags(all).map(tag=>({params:{tag:tag.toLowerCase()},props:{tag}}));} const {tag}=Astro.props; const filtered=items.filter(x=>x.data.tags.some(t=>t.toLowerCase()===tag.toLowerCase()));
+---
+<BaseLayout><main><div class="wrap"><div class="eyebrow">Etiqueta</div><h1>#{tag}</h1><div class="grid">{filtered.map(entry=><NewsCard entry={entry}/>)}</div></div></main></BaseLayout>

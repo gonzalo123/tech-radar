@@ -1,0 +1,4 @@
+---
+const { title = 'gonzalo123 Tech Radar', description = 'Un radar personal sobre tecnología, software y sistemas.', image } = Astro.props; const canonical = new URL(Astro.url.pathname, Astro.site ?? Astro.url).toString();
+---
+<title>{title} · gonzalo123 Tech Radar</title><meta name="description" content={description}/><link rel="canonical" href={canonical}/><meta property="og:title" content={title}/><meta property="og:description" content={description}/><meta property="og:type" content="article"/><meta property="og:url" content={canonical}/>{image && <meta property="og:image" content={new URL(image, Astro.site ?? Astro.url)}/>}<meta name="twitter:card" content="summary_large_image"/>

@@ -1,0 +1,4 @@
+---
+const { entry } = Astro.props; const { data } = entry; const href = `${import.meta.env.BASE_URL}news/${entry.id.replace(/\.md$/,'')}/`;
+---
+<article class="card"><div class="badge">{data.breaking ? 'Última hora · ' : ''}{data.category}</div><h3><a href={href}>{data.title}</a></h3><p class="meta">{data.date.toLocaleDateString('es-ES')} · {data.source}</p></article>

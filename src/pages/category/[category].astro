@@ -1,0 +1,4 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro'; import NewsCard from '../../components/NewsCard.astro'; import {published,categories} from '../../lib/news'; const items=await published(); export async function getStaticPaths(){const all=await published(); return categories(all).map(category=>({params:{category:category.toLowerCase().replaceAll(' ','-')},props:{category}}));} const {category}=Astro.props; const filtered=items.filter(x=>x.data.category.toLowerCase().replaceAll(' ','-')===category.toLowerCase().replaceAll(' ','-'));
+---
+<BaseLayout><main><div class="wrap"><div class="eyebrow">Categoría</div><h1>{category}</h1><div class="grid">{filtered.map(entry=><NewsCard entry={entry}/>)}</div></div></main></BaseLayout>
