@@ -36,3 +36,12 @@ header { border-bottom:1px solid var(--line); background:var(--bg) } .masthead {
 /* Portada: una escala más sobria para facilitar la lectura */
 h1 { font-size:clamp(2.35rem,5vw,4.6rem) }
 .lead-story h1 { font-size:clamp(2.35rem,4vw,4.2rem); line-height:1.04; margin-top:.45rem }
+
+.today-strip{background:var(--text);color:var(--paper);padding:1rem 1.25rem;margin:1.25rem 0;border-radius:2px}
+.today-strip h2{color:var(--paper);font:800 .8rem Georgia,serif;text-transform:uppercase;letter-spacing:.1em;margin:0 0 .7rem}
+.today-list{list-style:none;margin:0;padding:0;display:grid;gap:.55rem}
+.today-list a{display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap}
+.today-list .eyebrow{color:var(--accent);flex-shrink:0}
+.today-list span:last-child{font-weight:600}
+@media(max-width:700px){.today-strip{padding:.85rem 1rem}}
+

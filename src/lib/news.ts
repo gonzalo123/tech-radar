@@ -6,3 +6,10 @@ export const categories = (items: NewsEntry[]) => [...new Set(items.map(x => x.d
 export const tags = (items: NewsEntry[]) => [...new Set(items.flatMap(x => x.data.tags))].sort();
 export const related = (item: NewsEntry, items: NewsEntry[]) => items.filter(x => x.id !== item.id).map(x => ({ x, score: (x.data.category === item.data.category ? 3 : 0) + x.data.tags.filter(t => item.data.tags.includes(t)).length })).filter(x => x.score).sort((a,b) => b.score-a.score).slice(0,3).map(x => x.x);
 export const editorialOrder = (items: NewsEntry[]) => [...items].sort((a,b) => (b.data.priority-a.data.priority) || (b.data.date.valueOf()-a.data.date.valueOf()));
+// "Hoy" = el día de publicación más reciente presente en la colección (no la fecha del reloj,
+// para evitar huecos si el scheduled task aún no ha corrido o hay desfase horario).
+export const latestPublishDate = (items: NewsEntry[]) => new Date(Math.max(...items.map(x => x.data.date.valueOf())));
+export const todayItems = (items: NewsEntry[]) => {
+  const latest = latestPublishDate(items).toDateString();
+  return items.filter(x => x.data.date.toDateString() === latest).sort((a,b) => b.data.priority-a.data.priority);
+};
