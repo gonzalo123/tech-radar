@@ -77,6 +77,23 @@ Examples:
 * changes affecting observability, security, performance or cost;
 * developments that enable a useful new proof of concept.
 
+Also consider strategically significant AI developments even when they are not product releases.
+
+Examples include:
+
+* major public statements, essays or policy proposals from leaders of frontier AI labs when they materially affect the direction of the industry;
+* concrete safety, governance or development commitments from OpenAI, Anthropic, Google DeepMind, xAI, Meta or other major AI labs;
+* events that trigger significant reactions from multiple major AI companies, researchers, governments or regulators;
+* developments that materially change the debate around AI capabilities, safety, regulation, competition or the pace of frontier-model development.
+
+Do not treat these as generic opinion pieces when the author is a relevant primary actor and the statement itself constitutes an industry development.
+
+A useful test is:
+
+> Would a technically informed person following AI closely reasonably expect to know that this happened, even if it does not immediately change an API, model or developer workflow?
+
+If yes, consider it a news candidate.
+
 Avoid publishing:
 
 * minor patch releases;
@@ -90,7 +107,7 @@ Avoid publishing:
 * repetitive coverage of an already published story;
 * benchmark stories without meaningful practical implications;
 * introductory tutorials;
-* generic opinion pieces;
+* generic opinion pieces without concrete industry significance, commitments or substantial reaction;
 * stories whose only interesting aspect is a provocative headline.
 
 ---
@@ -117,6 +134,8 @@ Always determine when the actual event happened.
 # 4. Research process
 
 Research broadly before selecting stories.
+
+During AI research, explicitly check for major developments involving the leadership of frontier labs, including OpenAI, Anthropic, Google DeepMind, xAI and Meta, not only product announcements and release notes.
 
 Do not generate articles from search-result snippets alone.
 
@@ -149,6 +168,7 @@ Typical high-quality primary sources include:
 * GitHub releases;
 * GitHub repositories;
 * official product announcements;
+* first-party statements, essays or posts from executives and researchers of major AI labs when the statement itself is the news;
 * standards bodies;
 * project maintainers.
 
