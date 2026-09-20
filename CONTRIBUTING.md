@@ -603,6 +603,11 @@ The most important story of the edition.
 
 Normally there should be only one lead story.
 
+`placement` records the editorial hierarchy of the edition in which a story is
+published. It does not guarantee a permanent position on the homepage. The
+homepage gives precedence to stories from the last three days, then applies
+`placement`, `featured` and `priority` within that recent news pool.
+
 ## `secondary`
 
 Important stories that deserve prominent placement.

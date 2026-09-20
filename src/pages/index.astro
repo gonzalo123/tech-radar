@@ -1,6 +1,7 @@
 ---
-import BaseLayout from '../layouts/BaseLayout.astro'; import NewsCard from '../components/NewsCard.astro'; import { published, categories, editorialOrder, todayItems } from '../lib/news';
-const items=await published(); const ordered=editorialOrder(items); const featured=ordered.find(x=>x.data.placement==='lead') ?? ordered.find(x=>x.data.featured) ?? ordered[0]; const secondary=ordered.filter(x=>x.id!==featured?.id && x.data.placement!=='brief').slice(0,3); const briefs=ordered.filter(x=>x.id!==featured?.id && x.data.placement==='brief').slice(0,4); const used=new Set([featured?.id,...secondary.map(x=>x.id),...briefs.map(x=>x.id)]); const cats=categories(items); const sectionItems=(category:string)=>ordered.filter(x=>x.data.category===category && !used.has(x.id)).slice(0,3);
+import BaseLayout from '../layouts/BaseLayout.astro'; import NewsCard from '../components/NewsCard.astro'; import { published, categories, frontPageOrder, todayItems } from '../lib/news';
+const FRONT_PAGE_DAYS=3;
+const items=await published(); const frontPage=frontPageOrder(items,FRONT_PAGE_DAYS); const ordered=frontPage.ordered; const leadPool=frontPage.recent.length>0?frontPage.recent:ordered; const featured=leadPool.find(x=>x.data.placement==='lead') ?? leadPool.find(x=>x.data.featured) ?? leadPool[0]; const secondary=ordered.filter(x=>x.id!==featured?.id && x.data.placement!=='brief').slice(0,3); const briefs=ordered.filter(x=>x.id!==featured?.id && x.data.placement==='brief').slice(0,4); const used=new Set([featured?.id,...secondary.map(x=>x.id),...briefs.map(x=>x.id)]); const cats=categories(items); const sectionItems=(category:string)=>ordered.filter(x=>x.data.category===category && !used.has(x.id)).slice(0,3);
 const today=todayItems(items); const todayDate=today[0]?.data.date; const todayDateKey=todayDate?.toISOString().slice(0,10);
 ---
 <BaseLayout>
