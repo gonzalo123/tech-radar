@@ -21,7 +21,7 @@ breaking: false
 draft: false
 
 generated_by: "ChatGPT"
-generated_at: 2026-09-22T12:50:00+02:00
+generated_at: 2026-09-22T12:42:00+02:00
 ---
 
 TypeSafe AI lanzó el 15 de septiembre **Jev**, su primer *System One Model*, una arquitectura que no genera texto libre: recibe contexto y preguntas estructuradas y devuelve decisiones tipadas —por ejemplo booleanos, elecciones o puntuaciones— acompañadas de probabilidades. Tres días después, [Vercel informó](https://vercel.com/blog/ai-gateway-jev-model-launch) de que Jev se había convertido en el modelo con adopción más rápida de la historia de AI Gateway, utilizado por casi el 13 % de sus equipos de pago durante las primeras 24 horas.
