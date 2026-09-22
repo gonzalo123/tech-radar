@@ -199,6 +199,75 @@ Reconsider a previously unnoticed or rejected story when new information materia
 
 Do not assume that a story which looked unimportant on launch day remains unimportant several days later.
 
+## 4.2. Candidate backlog
+
+Maintain `editorial/candidates.json` as a small working backlog of credible stories that were discovered but not published.
+
+Add a candidate when it is potentially relevant but does not yet clear the publication threshold, especially when:
+
+* the source is credible but practical impact is not yet clear;
+* a new vendor or model has little adoption evidence;
+* an announcement lacks technical details that may appear later;
+* the development is promising but currently too narrow for publication.
+
+Each entry should record at least:
+
+* `id`;
+* `discovered_at`;
+* `title`;
+* `source_url`;
+* `status`;
+* `reason`;
+* `recheck_after`;
+* `recheck_until`;
+* relevant `signals_to_watch`.
+
+At the beginning of every research run, inspect candidates whose `recheck_after` has passed and whose `recheck_until` has not expired.
+
+When a candidate is published, rejected permanently, duplicated or expired, update its status instead of silently deleting the editorial history.
+
+Keep the backlog small. It is a memory aid for promising stories, not an archive of everything rejected.
+
+## 4.3. Dynamic watchlist
+
+Maintain `editorial/watchlist.json` for newly discovered vendors, labs, models, tools and projects that deserve temporary extra attention.
+
+Add an entity when it is new to Tech Radar and shows at least one strong signal such as unusual adoption, architecture, price/performance, ecosystem interest or integration by an important platform.
+
+A normal watch period is 30 days. During that period, explicitly check the entity in each research run when relevant.
+
+Watchlist entries should include:
+
+* entity name and type;
+* reason for watching;
+* date added;
+* `watch_until`;
+* primary URLs or domains;
+* signals worth monitoring.
+
+Expired entries may be removed when they have become part of the normal permanent watchlist or when they no longer show meaningful activity.
+
+## 4.4. Weekly coverage audit
+
+At least once every seven days, perform a coverage audit separate from normal candidate discovery.
+
+Review the most important AI and developer-tool developments discussed across multiple credible sources during the previous seven days and compare them with `src/content/news/`.
+
+The audit is not a request to copy popularity rankings. It is a safety net for missed stories.
+
+For each apparent gap, determine:
+
+1. whether the underlying event is real and supported by a primary source;
+2. whether Tech Radar already covered the same event under a different headline;
+3. whether later adoption, integrations, evaluations or technical details changed its significance;
+4. whether it should now be published, added to the candidate backlog or consciously rejected.
+
+Record a short dated result in `editorial/coverage-audit.md`, including important misses and what changed in the process as a result.
+
+A useful final question is:
+
+> Looking back at the last seven days, what would a technically informed AI practitioner be surprised not to find in Tech Radar?
+
 ---
 
 # 5. Source hierarchy
@@ -786,6 +855,12 @@ Recommended automated workflow:
 ```text
 Research
     ↓
+Candidate backlog recheck
+    ↓
+Dynamic watchlist check
+    ↓
+Emerging-model discovery
+    ↓
 Candidate discovery
     ↓
 Primary-source verification
@@ -887,16 +962,20 @@ Optimise for:
 A Tech Radar update is complete when:
 
 1. relevant recent developments have been researched;
-2. weak candidates have been discarded;
-3. selected stories have reliable sources;
-4. duplicates have been removed;
-5. every article follows the editorial rules;
-6. every article links to its source;
-7. frontmatter validates against the Astro schema;
-8. `npm run build` succeeds;
-9. changes are committed;
-10. changes reach `main`;
-11. the GitHub Pages deployment succeeds.
+2. due candidate-backlog entries have been rechecked;
+3. active watchlist entities have been considered;
+4. the emerging-model discovery pass has been performed;
+5. the weekly coverage audit has been performed when due;
+6. weak candidates have been discarded;
+7. selected stories have reliable sources;
+8. duplicates have been removed;
+9. every article follows the editorial rules;
+10. every article links to its source;
+11. frontmatter validates against the Astro schema;
+12. `npm run build` succeeds;
+13. changes are committed;
+14. changes reach `main`;
+15. the GitHub Pages deployment succeeds.
 
 The objective is not to produce content.
 
