@@ -153,6 +153,52 @@ For every candidate story:
 
 Research and writing are separate steps.
 
+## 4.1. Emerging model discovery
+
+Do not limit AI model research to vendors, labs, products or model names already known to Tech Radar.
+
+Every research run must include an explicit discovery pass for new or previously unknown:
+
+* foundation models;
+* reasoning models;
+* coding models;
+* agent-oriented models;
+* open-weight models;
+* inference architectures;
+* decision models and other model classes that do not fit the conventional LLM pattern.
+
+Use broad discovery queries and cross-vendor sources to find names that are not yet part of the normal watchlist. Useful signals include model gateways, model catalogs, developer platforms, inference providers, independent technical trackers and credible developer communities.
+
+The purpose of this pass is discovery, not automatic publication. A new model from an unknown vendor becomes a serious candidate when there is evidence of unusual:
+
+* developer adoption or usage growth;
+* architectural novelty;
+* price/performance;
+* integration by relevant developer platforms;
+* benchmark or evaluation results with practical implications;
+* rapid ecosystem activity;
+* discussion among technically credible practitioners.
+
+Ask explicitly:
+
+> What important AI development would I have missed if I only searched for companies and products I already knew?
+
+### Second-chance review
+
+During every run, review important AI and model announcements from roughly the previous 7 days that were not published.
+
+Reconsider a previously unnoticed or rejected story when new information materially increases its significance, including:
+
+* rapid adoption;
+* integration into major platforms;
+* independent evaluations;
+* important technical details published after launch;
+* unexpectedly strong price/performance;
+* substantial ecosystem growth;
+* significant reaction from the AI or developer community.
+
+Do not assume that a story which looked unimportant on launch day remains unimportant several days later.
+
 ---
 
 # 5. Source hierarchy
