@@ -1,5 +1,22 @@
 {
   "version": 1,
-  "updated_at": "2026-09-22T12:42:00+02:00",
-  "candidates": []
+  "updated_at": "2026-09-27T06:27:55+02:00",
+  "candidates": [
+    {
+      "id": "thinkingcap-qwen3-8-27b",
+      "discovered_at": "2026-09-27",
+      "title": "ThinkingCap-Qwen3.8-27B reduces reasoning tokens while preserving most accuracy",
+      "source_url": "https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/",
+      "status": "watching",
+      "reason": "Interesting cost-control approach with deployable weights, but current evidence is primarily vendor-run evaluation and the model has limited ecosystem adoption.",
+      "recheck_after": "2026-10-01",
+      "recheck_until": "2026-10-15",
+      "signals_to_watch": [
+        "independent evaluations",
+        "inference-provider availability",
+        "production adoption",
+        "third-party replication of token savings"
+      ]
+    }
+  ]
 }
