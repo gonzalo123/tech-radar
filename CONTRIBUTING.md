@@ -884,6 +884,18 @@ GitHub Pages
 
 The repository's GitHub Actions workflow automatically builds and deploys the site when changes reach `main`.
 
+For automated publishing, prefer GitHub's Contents API for normal content updates:
+
+* use a direct file-create operation for a new Markdown article;
+* use a direct file-update operation for an existing file;
+* let each operation write directly to `main` with a clear commit message.
+
+Prefer this path for normal editions containing a small number of Markdown or editorial-state files because it avoids manually constructing blobs, trees, commits and branch-reference updates.
+
+Use the low-level Git data workflow (`create_blob` → `create_tree` → `create_commit` → `update_ref`) only when an atomic multi-file commit is genuinely necessary. If `update_ref` fails but the commit was created successfully, do not treat that as a deploy failure: the commit has not reached `main`, so GitHub Actions has not started yet.
+
+After every write, verify that `main` contains the expected commit or files before checking GitHub Actions.
+
 Do not manually edit the generated `dist/` directory.
 
 ---
