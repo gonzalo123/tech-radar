@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-09-28T06:30:00+02:00",
+  "updated_at": "2026-10-01T06:59:00+02:00",
   "entities": [
     {
       "name": "TypeSafe AI / Jev",
@@ -8,8 +8,8 @@
       "reason": "New System One decision-model architecture with unusually rapid developer adoption after launch.",
       "added_at": "2026-09-22",
       "watch_until": "2026-10-22",
-      "last_checked": "2026-09-28",
-      "latest_signal": "goose 1.52 added a decisions provider with a native Jev implementation; no stronger follow-up found on 2026-09-28.",
+      "last_checked": "2026-10-01",
+      "latest_signal": "goose 1.52 remains the strongest follow-up integration; no newer platform, evaluation or production signal found on 2026-10-01.",
       "urls": [
         "https://typesafe.ai/",
         "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
