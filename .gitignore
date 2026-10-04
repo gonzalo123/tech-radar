@@ -7,3 +7,11 @@ dist/
 .env
 .env.*
 !.env.example
+
+# Android
+android/.gradle/
+android/**/build/
+android/local.properties
+artifacts/*.apk
+*.jks
+*.keystore
