@@ -17,8 +17,9 @@ En GitHub Pages, el workflow calcula automáticamente `SITE` y `BASE` para un re
 
 El proyecto Android de `android/` muestra la web publicada en
 `https://gonzalo123.github.io/tech-radar/` mediante WebView. Requiere Internet;
-las noticias nuevas aparecen sin reinstalar la app. Incluye portada, recarga,
-navegación con Atrás, enlaces externos en el navegador y reintento de conexión.
+las noticias nuevas aparecen sin reinstalar la app. Pulsa el logo para volver a la portada y arrastra hacia abajo desde el inicio de
+la página para actualizar. Incluye navegación con Atrás, enlaces externos en el
+navegador y reintento de conexión.
 Android mínimo: 8.0 (API 26). Identificador: `com.gonzalo123.techradar`.
 
 ### Compilar e instalar
