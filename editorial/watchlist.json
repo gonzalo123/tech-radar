@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-01T06:59:00+02:00",
+  "updated_at": "2026-10-04T13:00:11.496Z",
   "entities": [
     {
       "name": "TypeSafe AI / Jev",
@@ -8,8 +8,8 @@
       "reason": "New System One decision-model architecture with unusually rapid developer adoption after launch.",
       "added_at": "2026-09-22",
       "watch_until": "2026-10-22",
-      "last_checked": "2026-10-01",
-      "latest_signal": "goose 1.52 remains the strongest follow-up integration; no newer platform, evaluation or production signal found on 2026-10-01.",
+      "last_checked": "2026-10-04",
+      "latest_signal": "OpenRouter lists Jev Router (released September 25) for model and effort routing; added to the candidate backlog pending concrete integration or measured savings. Cloudflare launched Apache-2.0 Clef/Clef-flash with the System One API on October 1; published separately. No primary confirmation found for the reported Ollama follow-up.",
       "urls": [
         "https://typesafe.ai/",
         "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
@@ -21,6 +21,23 @@
         "production adoption",
         "pricing or availability changes",
         "new System One models"
+      ]
+    },
+    {
+      "name": "Cloudflare / Clef",
+      "type": "decision_models",
+      "reason": "Open Apache-2.0 decision models with a System One API, visual input and hosted availability on Workers AI.",
+      "added_at": "2026-10-04",
+      "watch_until": "2026-11-03",
+      "last_checked": "2026-10-04",
+      "urls": [
+        "https://developers.cloudflare.com/changelog/post/2026-10-01-clef-workers-ai/"
+      ],
+      "signals_to_watch": [
+        "independent evaluations",
+        "agent-framework integrations",
+        "self-hosted inference adoption",
+        "RL fine-tuning availability"
       ]
     }
   ]
