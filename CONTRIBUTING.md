@@ -127,6 +127,8 @@ When necessary, extend the search window to several days for developments that:
 
 Publication date and event date are not necessarily the same.
 
+The frontmatter `date` field and the date prefix in the Markdown filename must always represent the date the story is published in Tech Radar, not the date of the underlying event. When a story is recovered through second-chance review or published days after the original announcement, keep the Tech Radar publication date in frontmatter and filename, and state the original event or announcement date in the article body when relevant.
+
 Always determine when the actual event happened.
 
 ---
