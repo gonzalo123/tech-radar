@@ -833,7 +833,7 @@ It is also acceptable to publish nothing.
 
 # 25. Validation
 
-Before committing content, run:
+For changes that modify application code, configuration, the content schema or dependencies, run before committing:
 
 ```bash
 npm ci
@@ -841,6 +841,16 @@ npm run build
 ```
 
 The build must succeed.
+
+For automated content-only editions performed through the GitHub Contents API, local `npm ci` and `npm run build` validation is optional when the changes are limited to Markdown news articles and editorial-state files and do not modify application code, configuration, the content schema or dependencies.
+
+In that content-only workflow:
+
+* validate the generated frontmatter against the current Astro content schema before publishing;
+* write the content directly to `main` through the GitHub Contents API;
+* treat the repository's GitHub Actions build as the authoritative build validation;
+* verify the resulting workflow and GitHub Pages deployment when the available GitHub integration exposes that status;
+* if the workflow fails, treat the edition as a failed deployment and report it. Do not modify application code, configuration or infrastructure automatically in an attempt to repair the failure.
 
 Do not publish Markdown that violates the Astro content schema.
 
@@ -984,7 +994,7 @@ A Tech Radar update is complete when:
 9. every article follows the editorial rules;
 10. every article links to its source;
 11. frontmatter validates against the Astro schema;
-12. `npm run build` succeeds;
+12. validation succeeds: local `npm run build` for code/configuration changes, or the authoritative GitHub Actions build for eligible automated content-only editions;
 13. changes are committed;
 14. changes reach `main`;
 15. the GitHub Pages deployment succeeds.
