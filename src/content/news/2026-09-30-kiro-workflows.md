@@ -1,7 +1,7 @@
 ---
 title: "Kiro añade workflows multiagente con sesiones aisladas, bucles y ejecución paralela"
 description: "Los nuevos Workflows permiten delegar planes reutilizables en varios agentes, ejecutar cada paso con contexto independiente y mantener el trabajo en segundo plano."
-date: 2026-09-30
+date: 2026-10-06
 
 source: "Kiro"
 source_url: "https://kiro.dev/blog/introducing-workflows/"
