@@ -1,7 +1,7 @@
 ---
 title: "Reflection presenta Beam, un modelo open-weight de 501B centrado en coding y agentes"
 description: "Beam usa una arquitectura MoE con 23B parámetros activos y Reflection prevé publicar este mes los pesos, el informe técnico y las herramientas bajo Apache 2.0."
-date: 2026-10-05
+date: 2026-10-06
 
 source: "Reflection AI"
 source_url: "https://reflection.ai/blog/introducing-beam"
