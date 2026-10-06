@@ -1,7 +1,7 @@
 ---
 title: "Strands publica Decider 2B, un modelo pequeño para decisiones dentro de agentes"
 description: "El modelo open source está optimizado para elegir rápidamente entre opciones y permite experimentar localmente con arquitecturas System One sin recurrir a un LLM generativo para cada decisión."
-date: 2026-10-01
+date: 2026-10-06
 
 source: "Strands Agents"
 source_url: "https://strandsagents.com/blog/introducing-strands-decider/"
