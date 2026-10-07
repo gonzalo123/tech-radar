@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "updated_at": "2026-10-06T07:18:00+02:00",
+  "updated_at": "2026-10-07T07:15:00+02:00",
   "candidates": [
     {
       "id": "thinkingcap-qwen3-8-27b",
@@ -24,8 +24,8 @@
       "title": "Jev Router selects a generative model and reasoning effort on OpenRouter",
       "source_url": "https://openrouter.ai/typesafe/jev-router",
       "status": "watching",
-      "reason": "Primary catalog confirms a September 25 release and per-selected-model billing. Promising extension of the already-covered Jev decision model, but no independent savings evaluation or concrete integration verified in this run.",
-      "recheck_after": "2026-10-07",
+      "reason": "OpenRouter availability remains verified and an independent jev-router project now demonstrates per-turn routing for Claude Code and Codex. Rechecked on 2026-10-07; useful ecosystem signal, but still lacks independent quality/cost measurements or enough adoption to justify a standalone follow-up.",
+      "recheck_after": "2026-10-11",
       "recheck_until": "2026-10-22",
       "signals_to_watch": [
         "independent quality and cost comparisons",
