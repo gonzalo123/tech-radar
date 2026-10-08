@@ -46,3 +46,19 @@ No material uncovered gap remained after today's edition. Gemini 4 Argon was pub
 ### Editorial lesson
 
 The second-chance and coverage-audit passes are currently catching the main cross-vendor stories; no process change is required this week.
+
+---
+
+## 2026-10-08
+
+### Cobertura revisada
+
+Se compararon los anuncios de la última semana con las noticias existentes. Se identificaron huecos sobre la marca de agua textGrain de OpenAI (5 de octubre), la beta abierta de Cloudflare Artifacts (1 de octubre) y los anuncios del 7 de octubre: Claude Haiku 5.5, Microsoft Execution Containers y la nueva detección contextual de secretos de GitHub.
+
+### Resultado y limitación
+
+Las fuentes originales se verificaron y se prepararon los artículos, pero las llamadas de creación mediante GitHub Contents API devolvieron el bloqueo: "This tool call was blocked by OpenAI's safety checks. Please double check what you are sending." Ninguno de los artículos pudo confirmarse en main. No se atribuye el fallo a GitHub ni al build.
+
+### Criterio editorial
+
+Se priorizaron cambios con disponibilidad y consecuencias prácticas. Se descartaron anuncios de hardware, noticias financieras y tutoriales sin nuevas capacidades.
