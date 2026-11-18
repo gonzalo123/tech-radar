@@ -62,3 +62,25 @@ Las fuentes originales se verificaron y se prepararon los artículos, pero las l
 ### Criterio editorial
 
 Se priorizaron cambios con disponibilidad y consecuencias prácticas. Se descartaron anuncios de hardware, noticias financieras y tutoriales sin nuevas capacidades.
+
+---
+
+## 2026-11-18
+
+### Cobertura revisada
+
+Se contrastaron las novedades del 11 al 17 de noviembre en fuentes oficiales de OpenAI, Anthropic, AWS y GitHub, con una búsqueda transversal de modelos emergentes y revisión de las ediciones recientes. Se revisaron los candidatos antiguos ThinkingCap y Jev Router: sus ventanas de seguimiento terminaron en octubre sin nuevas pruebas suficientes en esta revisión. Las entradas temporales de la watchlist también habían caducado; no se identificó una nueva entidad con señales suficientes para añadirla.
+
+### Resultado
+
+Se recuperó la capacidad de búsqueda tabular de Amazon Bedrock Managed Knowledge Base, descrita por AWS el 16 de noviembre y no cubierta en las ediciones recientes. Se publicó el 18 de noviembre. Las noticias sobre Qwen4-Max, Claude Managed Agents, SGLang y Gemini Decision 1 ya estaban cubiertas.
+
+### Descartes
+
+- OpenAI y NATO (17 de noviembre): colaboración significativa para defensa cibernética, pero sin nueva API o capacidad técnica general para desarrolladores detallada en el anuncio.
+- Tutoriales y casos de cliente de AWS sobre AgentCore, migración de mainframes y guardrails: útiles como referencias, pero sin un lanzamiento adicional suficientemente diferenciado.
+- Modelos emergentes encontrados en el rastreo transversal: sin evidencia nueva de adopción o rendimiento que justifique publicar solo por su aparición.
+
+### Lección editorial
+
+Revisar novedades de servicios AWS publicadas entre ediciones permite detectar capacidades concretas que no aparecen en los anuncios de modelos. Mantener la distinción entre nuevas funciones y tutoriales evita inflar la edición.
