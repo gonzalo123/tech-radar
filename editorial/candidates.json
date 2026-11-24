@@ -1,14 +1,14 @@
 {
   "version": 1,
-  "updated_at": "2026-10-07T07:15:00+02:00",
+  "updated_at": "2026-11-24T06:32:06+01:00",
   "candidates": [
     {
       "id": "thinkingcap-qwen3-8-27b",
       "discovered_at": "2026-09-27",
       "title": "ThinkingCap-Qwen3.8-27B reduces reasoning tokens while preserving most accuracy",
       "source_url": "https://bottlecapai.com/post/thinkingcap-qwen3-8-27b/",
-      "status": "watching",
-      "reason": "Interesting cost-control approach with deployable weights, but evidence remains primarily vendor-run and ecosystem adoption is limited. Rechecked on 2026-10-06; no sufficiently strong independent evaluation, inference-provider adoption or production evidence found.",
+      "status": "expired",
+      "reason": "Interesting cost-control approach with deployable weights, but evidence remains primarily vendor-run and ecosystem adoption is limited. Rechecked on 2026-10-06; no sufficiently strong independent evaluation, inference-provider adoption or production evidence found. Monitoring window expired; see coverage audit dated 2026-11-18.",
       "recheck_after": "2026-10-10",
       "recheck_until": "2026-10-15",
       "signals_to_watch": [
@@ -23,8 +23,8 @@
       "discovered_at": "2026-10-04",
       "title": "Jev Router selects a generative model and reasoning effort on OpenRouter",
       "source_url": "https://openrouter.ai/typesafe/jev-router",
-      "status": "watching",
-      "reason": "OpenRouter availability remains verified and an independent jev-router project now demonstrates per-turn routing for Claude Code and Codex. Rechecked on 2026-10-07; useful ecosystem signal, but still lacks independent quality/cost measurements or enough adoption to justify a standalone follow-up.",
+      "status": "expired",
+      "reason": "OpenRouter availability remains verified and an independent jev-router project now demonstrates per-turn routing for Claude Code and Codex. Rechecked on 2026-10-07; useful ecosystem signal, but still lacks independent quality/cost measurements or enough adoption to justify a standalone follow-up. Monitoring window expired; see coverage audit dated 2026-11-18.",
       "recheck_after": "2026-10-11",
       "recheck_until": "2026-10-22",
       "signals_to_watch": [
