@@ -84,3 +84,26 @@ Se recuperó la capacidad de búsqueda tabular de Amazon Bedrock Managed Knowled
 ### Lección editorial
 
 Revisar novedades de servicios AWS publicadas entre ediciones permite detectar capacidades concretas que no aparecen en los anuncios de modelos. Mantener la distinción entre nuevas funciones y tutoriales evita inflar la edición.
+
+---
+
+## 2026-11-25
+
+### Cobertura revisada
+
+Se comparó la cobertura del 18 al 24 de noviembre con búsquedas transversales de modelos y fuentes oficiales de IA y herramientas. GPT-6.2 Astra y Sol, GLM-5.4, Inkling 2 Mini, Hy4 y Strands Decider v2 ya estaban cubiertos. Recursive Flint también tenía cobertura anterior. No hay candidatos ni entradas temporales de seguimiento vigentes.
+
+### Resultado
+
+Se publicaron Bonsai 2.5 27B y la ampliación de CloudFormation, anunciados el 24 de noviembre. La ficha de pesos de Bonsai confirma la disponibilidad, pero sus resultados de calidad siguen siendo evaluaciones del fabricante.
+
+### Descartes y limitaciones
+
+- Daybreak Red en bedrock-runtime: acceso restringido a clientes elegibles de GovCloud estadounidense.
+- OpenSearch Serverless en Ciudad del Cabo: ampliación regional.
+- Cambios de notificaciones de GitHub: mejora operativa menor.
+- La búsqueda retrospectiva no es exhaustiva; no se identificó otro hueco suficientemente verificado.
+
+### Lección editorial
+
+Mantener la búsqueda transversal de modelos comprimidos y contrastar los anuncios con las fichas de pesos descargables, distinguiendo tamaño de pesos de memoria total de ejecución.
