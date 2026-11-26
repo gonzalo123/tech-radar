@@ -131,6 +131,15 @@ The frontmatter `date` field and the date prefix in the Markdown filename must a
 
 Always determine when the actual event happened.
 
+### High-impact recovery beyond the usual news window
+
+Recency is a discovery priority, not an absolute publication cutoff. A previously uncovered development may be published even months after its announcement when it remains actionable and materially changes architecture, migration effort, operational cost, security or developer workflows. Apply this rule across all editorial categories, not only AI models.
+
+During each run, consider older high-impact discoveries surfaced by research, user recommendations or current technical discussion. During the weekly coverage audit, explicitly search the preceding 12 months for major missed capabilities, rotating focus across AI, AWS, infrastructure and developer tooling.
+
+Publish a recovered story only after verifying the original announcement date, current relevance and primary source, checking for duplicates and documenting a concrete practical implication. Age alone is not a sufficient rejection reason for a high-impact omission. Do not present the original event as recent: explicitly state its original date and that it is recovered coverage, retain the current Tech Radar publication date in frontmatter and filename, and choose placement based on editorial importance rather than age. Avoid routine historical filler and unsupported claims of current availability.
+
+
 ---
 
 # 4. Research process
